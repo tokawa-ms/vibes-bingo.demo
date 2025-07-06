@@ -1,193 +1,187 @@
-# 🚀 JavaScript Application Template with GitHub Copilot
+# 🎯 ビンゴゲーム
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+会社のイベントや懇親会で使える、リアルタイム数字抽選システムです。  
+ルーレット風のアニメーション演出で盛り上がること間違いなし！
 
-> **GitHub Copilot** と **GitHub Coding Agent** を活用したモダンな JavaScript アプリケーション開発のためのテンプレートリポジトリ
+![ビンゴゲーム](https://img.shields.io/badge/Game-Bingo-brightgreen)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
-## 📋 概要
+## 🎮 ゲームの特徴
 
-このリポジトリは、AI 駆動開発ツールを使用して効率的な JavaScript アプリケーション開発を実現するための包括的なテンプレートです。最新の Web 技術スタックと開発手法を組み合わせ、迅速なプロトタイピングから本格的なアプリケーション開発まで対応します。
+### 🎲 **基本機能**
 
-### ✨ 主な特徴
+- **1-75 の数字抽選**: ビンゴ標準の数字範囲をカバー
+- **重複防止**: 一度出た数字は二度と選ばれない
+- **大きな数字表示**: 画面左側に見やすく表示
+- **履歴表示**: 右側に過去の数字をボール形式で一覧表示
 
-- 🤖 **AI ファーストな開発体験** - GitHub Copilot & Coding Agent 完全対応
-- ⚡ **ゼロ設定で即座に開始** - ブラウザで直接実行可能
-- 🎨 **モダンな UI/UX** - Tailwind CSS による美しいデザイン
-- 📱 **レスポンシブデザイン** - あらゆるデバイスに対応
-- 🛠️ **開発者フレンドリー** - 明確なコーディング規約とベストプラクティス
+### 🎪 **ルーレット演出**
+
+- **3 秒間のルーレットアニメーション**: 期待感を最大限に演出
+- **スムーズな減速**: 自然な動きで最終数字まで導く
+- **背景色変化**: 数字範囲に応じた 5 色のグラデーション
+- **最終結果エフェクト**: 決定時の華やかな登場アニメーション
+
+### 🎨 **デザイン特徴**
+
+- **色分けシステム**: 数字範囲別に直感的な色分け
+  - 🔴 **1-15**: 赤色
+  - 🔵 **16-30**: 青色
+  - 🟢 **31-45**: 緑色
+  - 🟠 **46-60**: オレンジ色
+  - � **61-75**: 紫色
+- **レスポンシブデザイン**: スマホ・タブレット・PC 対応
+- **アニメーション**: 滑らかな動きと視覚効果
 
 ## 🛠️ 技術スタック
 
-### フロントエンド
+### **フロントエンド**
 
-| 技術                                     | バージョン | 用途                         |
-| ---------------------------------------- | ---------- | ---------------------------- |
-| HTML5                                    | Latest     | セマンティックなマークアップ |
-| CSS3                                     | Latest     | スタイリング                 |
-| [Tailwind CSS](https://tailwindcss.com/) | 3.x (CDN)  | ユーティリティファースト CSS |
-| JavaScript                               | ES6+       | インタラクティブな機能       |
+- **HTML5**: セマンティックな構造とアクセシビリティ
+- **CSS3**: モダンなアニメーションとレスポンシブデザイン
+- **JavaScript (ES6)**: クラスベースの設計とモダン構文
+- **Tailwind CSS**: ユーティリティファーストのスタイリング
 
-### 開発ツール
+### **技術的特徴**
 
-- **GitHub Copilot** - AI ペアプログラミング
-- **GitHub Coding Agent** - 自動コード生成
-- **Visual Studio Code** - 推奨 IDE
+- **純粋な Web 技術**: 外部依存なしで動作
+- **モダン CSS**: CSS Grid、Flexbox、カスタムアニメーション
+- **ES6 クラス**: オブジェクト指向設計
+- **イベント駆動**: インタラクティブなユーザー体験
 
-## 📁 プロジェクト構造
-
-```
-📦 JSApp-Template-001/
-├── 📄 README.md                 # プロジェクト概要
-├── 📄 .github/
-│   └── 📄 copilot-instructions.md  # Copilot 設定
-└── 📁 src/                      # アプリケーションソース
-    ├── 📄 index.html            # メインHTML
-    ├── 📁 css/                  # スタイルシート
-    │   └── 📄 styles.css        # カスタムCSS
-    ├── 📁 js/                   # JavaScript
-    │   └── 📄 script.js         # メインスクリプト
-    └── 📁 assets/               # 静的リソース
-        └── 📁 images/           # 画像ファイル
-```
-
-## 🚀 クイックスタート
-
-### 前提条件
-
-- 📌 モダンな Web ブラウザ (Chrome 90+, Firefox 88+, Safari 14+)
-- 📌 Visual Studio Code (推奨)
-- 📌 GitHub Copilot サブスクリプション
-
-### セットアップ手順
-
-#### 🤖 GitHub Coding Agent を使用する場合
-
-1. **リポジトリの作成**
-
-   ```bash
-   # このテンプレートから新しいリポジトリを作成
-   gh repo create my-js-app --template JSApp-Template-001
-   ```
-
-2. **Issue の作成と Coding Agent の起動**
-
-   - リポジトリに新しい Issue を作成
-   - 開発要件を詳細に記述
-   - `@copilot` で Coding Agent をアサイン
-
-3. **自動開発プロセス**
-
-   - Coding Agent が要件を分析
-   - 自動的にコードを生成
-   - Pull Request として提案
-
-4. **レビューとデプロイ**
-   - 生成されたコードをレビュー
-   - main ブランチにマージ
-   - GitHub Pages でライブデモを確認
-
-#### 💻 GitHub Copilot Agent Mode (ローカル開発) を使用する場合
-
-1. **リポジトリのクローン**
-
-   ```bash
-   git clone https://github.com/tokawa-ms/JSApp-Template-001.git
-   cd JSApp-Template-001
-   ```
-
-2. **開発環境の準備**
-
-   ```bash
-   # Visual Studio Code で開く
-   code .
-   ```
-
-3. **Copilot の設定**
-
-   - VS Code で GitHub Copilot 拡張機能を有効化
-   - Agent モードに切り替え
-   - チャットウィンドウを開く
-
-4. **開発開始**
-   - 自然言語でプロンプトを入力
-   - Copilot の提案を確認・適用
-   - ブラウザで `src/index.html` を開いて動作確認
-
-## 💡 使用例とサンプルプロンプト
-
-### 基本的なアプリケーション作成
+## 📁 プロジェクト構成
 
 ```
-「ToDoリストアプリを作成してください。追加、削除、完了マークの機能を含めてください。」
+src/
+├── index.html          # メインHTMLファイル
+├── css/
+│   └── styles.css      # カスタムスタイルとアニメーション
+└── js/
+    └── script.js       # ゲームロジックとアニメーション制御
 ```
 
-### インタラクティブな機能追加
+## 🚀 使い方
 
+### **ローカル実行**
+
+1. リポジトリをクローンまたはダウンロード
+2. `src/index.html` をブラウザで開く
+3. 「引く」ボタンを押してゲーム開始！
+
+### **GitHub Pages での公開**
+
+1. GitHub リポジトリの Settings > Pages にアクセス
+2. Source を「Deploy from a branch」に設定
+3. Branch を「main」、フォルダを「/ (root)」に設定
+4. `https://username.github.io/repository-name/src/` でアクセス
+
+## 🎯 実装詳細
+
+### **ゲームロジック**
+
+```javascript
+class BingoGame {
+  constructor() {
+    this.availableNumbers = this.generateNumberArray(1, 75);
+    this.drawnNumbers = [];
+    this.currentNumber = null;
+  }
+
+  drawNumber() {
+    // ルーレットアニメーション付きの数字抽選
+  }
+}
 ```
-「現在の天気情報を表示するウィジェットを追加してください。API キーは設定画面で入力できるようにしてください。」
+
+### **アニメーション仕様**
+
+- **ルーレット回転**: 6 回転（2160 度）の滑らかな回転
+- **数字変化**: 2.8 秒間の動的フリッカー効果
+- **減速カーブ**: `1 - Math.pow(1 - progress, 3)` による自然な減速
+- **最終演出**: スケール＋回転＋フェードの複合エフェクト
+
+### **レスポンシブ仕様**
+
+```css
+/* デスクトップ */
+.number-ball {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.125rem;
+}
+
+/* タブレット (768px以下) */
+.number-ball {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1rem;
+}
+
+/* スマホ (480px以下) */
+.number-ball {
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.9rem;
+}
 ```
 
-### UI/UX の改善
+## ⚡ パフォーマンス
 
+- **軽量**: 外部ライブラリ依存なし
+- **高速**: ピュア JavaScript による最適化
+- **滑らか**: 60FPS アニメーション
+- **メモリ効率**: 効率的な DOM 操作
+
+## � カスタマイズ
+
+### **数字範囲の変更**
+
+```javascript
+// 1-90のヨーロピアンビンゴの場合
+this.availableNumbers = this.generateNumberArray(1, 90);
 ```
-「Tailwind CSS を使用してダークモード対応のモダンなデザインに変更してください。」
+
+### **アニメーション時間の調整**
+
+```javascript
+// ルーレット時間を変更（ミリ秒）
+const totalDuration = 3500; // 3.5秒に延長
 ```
 
-## 📱 レスポンシブデザイン対応
+### **色テーマのカスタマイズ**
 
-このテンプレートは以下の画面サイズに最適化されています：
+```javascript
+getNumberColor(number) {
+    // 独自の色分けロジックを実装
+}
+```
 
-- 📱 **モバイル**: 320px〜768px
-- 📊 **タブレット**: 768px〜1024px
-- 💻 **デスクトップ**: 1024px 以上
+## 🎉 使用シーン
 
-## 🔒 セキュリティとベストプラクティス
+- **会社イベント**: 懇親会、歓送迎会、忘年会
+- **学校行事**: 文化祭、体育祭、クラス会
+- **地域イベント**: 町内会、お祭り、集会
+- **家族パーティー**: 誕生日会、記念日
 
-### API キーの取り扱い
+## 📱 動作環境
 
-- ✅ 環境変数や UI 入力フィールドを使用
-- ❌ ハードコーディングは禁止
-- 🔐 開発用のテストキーのみ使用
+- **ブラウザ**: Chrome 60+, Firefox 55+, Safari 12+, Edge 79+
+- **デバイス**: PC、タブレット、スマートフォン
+- **解像度**: 320px〜 (レスポンシブ対応)
 
-### コード品質
+## 🤝 貢献
 
-- 📋 ESLint ルールに準拠
-- 📝 適切なコメント記述
-- 🧪 エラーハンドリングの実装
-
-## 🤝 コントリビューション
-
-プロジェクトへの貢献を歓迎します！
-
-1. このリポジトリをフォーク
-2. フィーチャーブランチを作成 (`git checkout -b feature/amazing-feature`)
-3. 変更をコミット (`git commit -m 'Add amazing feature'`)
-4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
-5. Pull Request を作成
+プルリクエストやイシューの報告を歓迎します！  
+改善提案やバグ報告は GitHub Issues までお願いします。
 
 ## 📄 ライセンス
 
-このプロジェクトは [MIT License](LICENSE) の下で公開されています。
-
-## 🆘 サポートとリソース
-
-- 📖 **ドキュメント**: [GitHub Copilot Docs](https://docs.github.com/en/copilot)
-- 💬 **コミュニティ**: [GitHub Discussions](https://github.com/github/copilot-docs/discussions)
-- 🐛 **Issue 報告**: [Issues](https://github.com/tokawa-ms/JSApp-Template-001/issues)
-
-## 📊 プロジェクト統計
-
-![GitHub stars](https://img.shields.io/github/stars/tokawa-ms/JSApp-Template-001?style=social)
-![GitHub forks](https://img.shields.io/github/forks/tokawa-ms/JSApp-Template-001?style=social)
-![GitHub issues](https://img.shields.io/github/issues/tokawa-ms/JSApp-Template-001)
+このプロジェクトは MIT ライセンスの下で公開されています。  
+詳細は [LICENSE](LICENSE) ファイルをご確認ください。
 
 ---
 
-<div align="center">
-  <strong>🚀 Happy Coding with AI! 🤖</strong><br>
-  Made with ❤️ and GitHub Copilot
-</div>
+**🎯 楽しいビンゴゲームをお楽しみください！** 🎉
