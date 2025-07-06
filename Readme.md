@@ -9,6 +9,11 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
+## ⚠️ 注意事項
+
+このリポジトリは、**GitHub Copilot** を活用した **Vibe Coding** のデモ目的で作られています。  
+実際の開発プロセスで AI とのペアプログラミングがどのように機能するかを示すサンプルプロジェクトです。
+
 ## 🎮 ゲームの特徴
 
 ### 🎲 **基本機能**
